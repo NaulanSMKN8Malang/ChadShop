@@ -5,22 +5,22 @@
     <div class="col col-lg-6 col-md-6">
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Form Edit Kategori</h3>
+          <h3 class="card-title">Form Edit Produk</h3>
           <div class="card-tools">
-            <a href="{{ route('kategori.index') }}" class="btn btn-sm btn-danger">
+            <a href="{{ route('produk.index') }}" class="btn btn-sm btn-danger">
               Tutup
             </a>
           </div>
         </div>
         <div class="card-body">
           <form action="#">
-          <div class="form-group">
-              <label for="nama_kategori">Nama Kategori</label>
-              <input type="text" name="nama_kategori" id="nama_kategori" class="form-control">
+            <div class="form-group">
+              <label for="nama_produk">Nama Produk</label>
+              <input type="text" name="nama_produk" id="nama_produk" class="form-control">
             </div>
             <div class="form-group">
-              <label for="slug_kategori">Slug Kategori</label>
-              <input type="text" name="slug_kategori" id="slug_kategori" class="form-control">
+              <label for="slug_produk">Slug Produk</label>
+              <input type="text" name="slug_produk" id="slug_produk" class="form-control">
             </div>
             <div class="form-group">
               <label for="deskripsi">Deskripsi</label>
