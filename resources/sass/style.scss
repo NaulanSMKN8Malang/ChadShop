@@ -1,0 +1,126 @@
+* {
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #EDEDED;
+}
+
+/* Navbar */
+nav {
+    .navbar-brand {
+        margin-right: 5%;
+        font-size: 20pt;
+        color: #DA0037;
+        transition: 0.2s;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .navbar-brand:hover {
+        color: #DA0037;
+    }
+
+    .nav-item {
+        .nav-link {
+            font-size: 12pt;
+            color: #171717;
+        }
+
+        .nav-link:hover {
+            color: rgb(202, 0, 0);
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: space-between;
+
+        .search-form {
+
+            input {
+                border-radius: 10px 0 0 10px;
+                border: solid #DA0037;
+                border-right: none;
+            }
+
+            button {
+                color: #EDEDED;
+                background-color: #DA0037;
+                border: solid #DA0037;
+                border-radius: 0 10px 10px 0;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                border: solid rgb(202, 0, 0);
+                background-color: #EDEDED;
+                color: rgb(202, 0, 0);
+            }
+        }
+
+        .log-reg {
+            background-color: #DA0037;
+            border: none;
+            font-weight: 500;
+        }
+
+        .log-reg:hover {
+            background-color: rgb(202, 0, 0);
+        }
+
+        .b1 {
+            border-radius: 0 0 0 10px;
+        }
+
+        .b2 {
+            border-radius: 0 10px 0 0;
+        }
+    }
+}
+
+/* Homepage.index */
+
+/* Carousel */
+.carousel {
+    margin-top: 10%;
+    margin-bottom: 40px;
+
+    .carousel-inner {
+        border-radius: 15px;
+    }
+
+    .carousel-item {
+        height: 400px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+        }
+    }
+}
+
+/* Category */
+.ctgy-section {
+    .btn-group {
+        width: 100%;
+
+        .btn {
+            background-color: #DA0037;
+            border: none;
+            border-left: 2px solid #EDEDED;
+            border-right: 2px solid #EDEDED;
+            padding: 10px 20px;
+            margin: 10px 0;
+        }
+
+        .btn:hover {
+            background-color: rgb(202, 0, 0);
+        }
+    }
+}

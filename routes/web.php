@@ -16,7 +16,6 @@ Route::get('/', [\App\Http\Controllers\HomepageController::class,'index']);
 Route::get('/kategori', [\App\Http\Controllers\HomepageController::class,'kategori']);
 Route::get('/kontak', [\App\Http\Controllers\HomepageController::class,'kontak']);
 Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
-Route::resource('kategori',\App\Http\Controllers\KategoriController::class);
 
 
 // Controller Menu Admin

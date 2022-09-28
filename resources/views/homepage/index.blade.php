@@ -5,80 +5,45 @@
 <!-- carousel -->
 <div class="row">
     <div class="col">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="{{ asset('images/chad-2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="/crsl-img/1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/chad-2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="/crsl-img/2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/chad-2.jpg') }}" class="d-block w-100" alt="...">
+            <img src="/crsl-img/3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </div>
   <!-- end carousel -->
-</div>
 
 <!-- kategori produk -->
-  <div class="row mt-4">
-    <div class="col col-md-12 col-sm-12 mb-4">
-      <h2 class="text-center">Kategori Produk</h2>
-    </div>
-    <!-- kategori pertama -->
-    
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm" style="border-radius: 25px">
-        <a href="{{ URL::to('kategori/satu') }}">
-          <img src="{{asset('images/chad-2.jpg') }}" alt="foto kategori" class="card-img-top"style="border-radius: 25px 25px 0 0">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('kategori/satu') }}" class="text-decoration-none">
-            <p class="card-text">Kategori Pertama</p>
-          </a>
-        </div>
-      </div>
-    </div>
 
-    <!-- kategori kedua -->
-
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm"style="border-radius: 25px">
-        <a href="{{ URL::to('kategori/dua') }}">
-          <img src="{{asset('images/chad-2.jpg') }}" alt="foto kategori" class="card-img-top"style="border-radius: 25px 25px 0 0">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('kategori/dua') }}" class="text-decoration-none">
-            <p class="card-text">Kategori Kedua</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- kategori ketiga -->
-
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm"style="border-radius: 25px">
-        <a href="{{ URL::to('kategori/tiga') }}">
-          <img src="{{asset('images/chad-2.jpg') }}" alt="foto kategori" class="card-img-top"style="border-radius: 25px 25px 0 0">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('kategori/tiga') }}" class="text-decoration-none">
-            <p class="card-text">Kategori Ketiga</p>
-          </a>
-        </div>
-      </div>
+  <div class="ctgy-section">
+    <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary">Treadmill</button>
+      <button type="button" class="btn btn-primary">Dumbbell</button>
+      <button type="button" class="btn btn-primary">Lorem</button>
+      <button type="button" class="btn btn-primary">Ipsum</button>
+      <button type="button" class="btn btn-primary">Siamet</button>
     </div>
   </div>
 
@@ -285,6 +250,7 @@
       </p>
     </div>
   </div>
+</div>
 </body>
 </html>
   <!-- end tentang toko -->
