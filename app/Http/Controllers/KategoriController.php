@@ -136,6 +136,7 @@ class KategoriController extends Controller
     }
     public function uploadimage(Request $request) {
         $this->validate($request, [
+            'image' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'kategori_id' => 'required',
         ]);
         $itemuser = $request->user();
@@ -153,4 +154,3 @@ class KategoriController extends Controller
             return back()->with('error', 'Kategori tidak ditemukan');
         }
     }
-}

@@ -7,6 +7,7 @@ use App\Models\Produk;
 use App\Models\Kategori;
 use App\Models\Slideshow;
 use App\Models\ProdukPromo;
+use App\Models\ProdukImage;
 
 class HomepageController extends Controller
 {
