@@ -20,10 +20,10 @@
             <a class="nav-link" href="/kategori">Category</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/kategori">Product</a>
+            <a class="nav-link" href="/produk">Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/kategori">About</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
         </ul>
       </div>
